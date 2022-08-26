@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.grid {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.col-1 {
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 {
+    width: 40%;
+    padding: 2em;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* Text */
+
+.top-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.5ch;
+}
+
+.main-text {
+    font-family: 'Fraunces', serif;
+    font-size: 45px;
+    line-height: 90%;
+}
+
+.body-text {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 45px;
+    display: inline;
+}
+
+.old-price {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    text-decoration: line-through;
+    margin: 7%;
+    color: hsl(228, 12%, 48%);
+}
+
+/* Button */
+.button {
+    background-color : hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+	border-radius:10px;
+	display:inline-block;
+    margin-top: 1em;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 74px;
+	text-decoration:none;
+}
+
+.button:hover {
+	background-color:hsl(212, 21%, 14%);
+}
+
+@media screen and (max-width: 575px) {
+    .grid {
+        grid-template-columns: auto;
+        grid-template-rows: 500px 500px;
+    }
+
+    .img {
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .col-1 {
+        text-align: right;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .col-2 {
+        width: 40%;
+        padding: 2em;
+        background-color: white;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .img {
+        width: 70%;
+        height: auto;
+    }
+}
